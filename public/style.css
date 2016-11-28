@@ -1,0 +1,198 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+#users {list-style-type: none; float: right; width: 15%; border: 2px solid black; background: #fff;}
+#users li { padding: 5px 10px; }
+#users header {padding: 5px 10px; background: #abc; }
+.user:hover {cursor:pointer; background: #eee;}
+ 
+body {
+  background: #CDC0B0;
+}
+
+.gameContainer {
+  max-width: 700px;
+  max-height: 400px;
+  float: left;
+}
+
+.gameChat {
+  max-width: 200px;
+  max-height: 200px;
+  float: right;
+}
+ 
+.stats {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+}
+.power {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+} 
+
+.oppPower {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+}
+
+.life {
+  color: red;
+  position: absolute;
+  left: 10px;
+  bottom: 60px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+}
+
+.oppLife {
+  color: red;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+}
+
+.carduseful {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow:0 0 20px yellow; 
+  -moz-box-shadow: 0 0 20px yellow; 
+  box-shadow:0 0 20px yellow;
+}
+
+.card, .cardback {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+}
+
+.cost {
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  font: 30px/60px Georgia, Times New Roman, serif;
+}
+
+.name {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  font: 25px/30px Georgia, Times New Roman, serif;
+}
+
+.card img, .cardback img, .carduseful img{
+  position: absolute;
+  width: 80%;
+  /*width: 50%;*/
+  left: 13px;
+  top: 20px;
+  
+}
+
+.sword {
+  position: absolute;
+  font-size: 25px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.heart {
+  position: absolute;
+  font-size: 20px;
+  right: 25px;
+  bottom: 0px;
+  color: red;
+}
+
+.atk {
+  position: absolute;
+  font-size: 25px;
+  left: 20px;
+  bottom: 0px;
+}
+
+.health {
+  position: absolute;
+  font-size: 25px;
+  right: 5px;
+  bottom: 0px;
+}
+
+/* For modern browsers */
+.hand:before,
+.hand:after {
+    content:"";
+    display:table;
+}
+ 
+.hand:after {
+    clear:both;
+}
+
+/*.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  bottom: 100px;
+  cursor: pointer;
+}*/
+
+.hand {
+  margin-left: 250px;
+  position: absolute;
+  bottom: -80px;
+}
+
+.oppHand {
+  margin-left: 250px;
+  position: absolute;
+  top: -80px;
+}
+
+.inPlay {
+  margin-left: 50px;
+  position: absolute;
+  bottom: 150px;
+}
+
+.endturn {
+  position: absolute;
+  right: 200px;
+  top: 300px;
+  width: 100px;
+  height: 40px;
+}
+
+.oppInPlay {
+  margin-left: 50px;
+  position: absolute;
+  top: 150px;
+}
+
+#hand > *:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+#hand > *, #oppHand > * {
+  margin-right: -70px;
+}
+
+#inPlay > *, #oppInPlay > * {
+  margin-right: 40px;
+}
